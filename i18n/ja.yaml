@@ -1,15 +1,17 @@
-menu: メニュー
-home: ホーム
-pageNotFound: ページが見つかりません
-toHomepage: ホームに戻る
-closeTitle: 閉める
-zoomTitle: ズーム
-arrowPrevTitle: 前
-arrowNextTitle: 次
-errorMsg: 写真を読み込めませんでした
-downloadTitle: ダウンロード
-relatedAlbums: 似たようなアルバム
+menu: Menu
+home: Home
+pageNotFound: Page not found
+toHomepage: Go to homepage
+closeTitle: Close
+zoomTitle: Zoom
+arrowPrevTitle: Previous
+arrowNextTitle: Next
+errorMsg: The photo cannot be loaded
+downloadTitle: Download
+relatedAlbums: Related albums
 photoCount:
-  other: "写真{{ . }}枚"
+  one: 1 photo
+  other: "{{ . }} photos"
 albumCount:
-  other: "{{ .count }}枚のアルバムに{{ .photoCount }}"
+  one: "{{ .photoCount }} in {{ .count }} album"
+  other: "{{ .photoCount }} in {{ .count }} albums"
