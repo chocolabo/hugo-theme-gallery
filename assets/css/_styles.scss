@@ -22,6 +22,10 @@ body > header {
   width: 100%;
   min-height: 4rem;
 
+  @media (min-width: 640px) {
+    margin-bottom: 3rem;
+  }
+
   ul {
     display: inline-flex;
   }
@@ -54,7 +58,7 @@ body > menu {
   color: var(--text-2);
   font-weight: 600;
   font-size: 1.25rem;
-  line-height: 1.75rem;
+  line-height: 1.4;
   user-select: none;
   text-align: center;
 
@@ -80,6 +84,10 @@ main > section {
   margin: 0 auto 3rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+
+  @media (min-width: 640px) {
+    margin-bottom: 4rem;
+  }
 }
 
 body > footer {
@@ -87,7 +95,7 @@ body > footer {
   margin-left: auto;
   color: var(--text-2);
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1.4286;
 
   section:last-of-type {
     display: flex;
@@ -116,13 +124,13 @@ hgroup {
   h1 {
     font-weight: 700;
     font-size: 1.875rem;
-    line-height: 2.25rem;
+    line-height: 1.2;
   }
 
   h2 {
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.3333;
   }
 
   p {
@@ -132,22 +140,23 @@ hgroup {
 
   @media (min-width: 640px) {
     width: 83.3333%;
+    margin-bottom: 4rem;
   }
 
   @media (min-width: 768px) {
     h1 {
       font-size: 2.25rem;
-      line-height: 2.5rem;
+      line-height: 1.1111;
     }
 
     h2 {
       font-size: 1.875rem;
-      line-height: 2.25rem;
+      line-height: 1.2;
     }
 
     p {
       font-size: 1.125rem;
-      line-height: 1.75rem;
+      line-height: 1.5556;
     }
   }
 }
@@ -261,7 +270,8 @@ section.gallery {
     border-radius: 1rem;
   }
 
-  & > img, & figure > img {
+  & > img,
+  & figure > img {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     border-radius: 1rem;
     aspect-ratio: 3/2;
@@ -292,7 +302,7 @@ section.gallery {
     & > p {
       color: var(--text-2);
       font-size: 0.875rem;
-      line-height: 1.25rem;
+      line-height: 1.4286;
     }
   }
 }
@@ -363,13 +373,13 @@ section.featured {
 
       @media (min-width: 768px) {
         font-size: 1.875rem;
-        line-height: 2.25rem;
+        line-height: 1.2;
       }
     }
 
     & > p {
       font-size: 0.875rem;
-      line-height: 1.25rem;
+      line-height: 1.4286;
     }
   }
 
@@ -401,7 +411,7 @@ nav.categories {
         border-radius: 9999px;
         border: 1px solid var(--border);
         font-size: 0.875rem;
-        line-height: 1.25rem;
+        line-height: 1.4286;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -409,8 +419,13 @@ nav.categories {
         @media (min-width: 640px) {
           padding: 0.75rem 1rem;
           font-size: 1rem;
+          line-height: 1.25;
         }
       }
     }
+  }
+
+  @media (min-width: 640px) {
+    margin-bottom: 4rem;
   }
 }
